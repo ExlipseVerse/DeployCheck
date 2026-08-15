@@ -1,5 +1,6 @@
 import { Command } from "commander"; // impport the command cli maker
-import { scan } from "./scanner.js"
+import { scan, ScanReport } from "./scanner.js"
+import { printReport } from "./report.js";
 
 
 const program = new Command; // create a programm
@@ -18,7 +19,8 @@ program
     .description("scans a project")
     .option("-p, --path <path>", "Project path", ".")
     .action(async (options: { path: string}) => {
-        await scan(options.path); // calling scan the actual thing
+        const scanReport: ScanReport =await scan(options.path); // calling scan the actual thing
+        printReport(scanReport);
     });
 
 
