@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "chalk": "^6.0.0",
+    "commander": "^15.0.0",
+    "dotenv": "^17.4.2",
+    "fast-glob": "^3.3.3",
+    "picocolors": "^1.1.1"
+  },
+  "name": "deploycheck",
+  "version": "0.1.0",
+  "description": "Catch enviroment configuration before deployment",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "build": "tsc",
+    "check": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExlipseVerse/DeployCheck.git"
+  },
+  "keywords": [
+    "enviroment-variables",
+    "deployment",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "deploycheck": "dist/index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/ExlipseVerse/DeployCheck/issues"
+  },
+  "homepage": "https://github.com/ExlipseVerse/DeployCheck#readme",
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}
