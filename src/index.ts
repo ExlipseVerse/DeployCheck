@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from "commander"; // impport the command cli maker
 import { scan, ScanReport } from "./scanner.js"
 import { printReport } from "./report.js";

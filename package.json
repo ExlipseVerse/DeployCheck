@@ -12,7 +12,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "build": "tsc",
     "check": "npm run build && npm test"
   },
@@ -41,5 +42,10 @@
     "tsx": "^4.23.12",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10"
-  }
+  },
+  "files": [
+      "dist",
+      "README.md",
+      "LICENSE"
+    ]
 }
