@@ -31,7 +31,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "deploycheck": "dist/index.ts"
+    "deploycheck": "dist/index.js"
   },
   "bugs": {
     "url": "https://github.com/ExlipseVerse/DeployCheck/issues"
